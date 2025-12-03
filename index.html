@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Anthony's personal portfolio. A frontend developer in training passionate about responsive web design, JavaScript, and creating clean user interfaces." />
+  <meta name="keywords" content="Anthony, frontend developer, portfolio, HTML, CSS, JavaScript, web developer" />
+  <meta name="author" content="Anthony" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Anthony's Portfolio" />
+  <meta property="og:description" content="Check out Anthony's frontend projects and contact him for collaboration." />
+  <meta property="og:image" content="https://via.placeholder.com/600x400.png?text=Anthony+Portfolio" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Anthony's Portfolio" />
+  <meta name="twitter:description" content="Frontend Developer in training. Clean, responsive websites and cool JavaScript features." />
+  <meta name="twitter:image" content="https://via.placeholder.com/600x400.png?text=Anthony+Portfolio" />
+
+  <title>Anthony's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" onerror="this.src='https://via.placeholder.com/120'" alt="Profile Photo" class="avatar" />
+    <h1>Hello, I'm Anthony</h1>
+    <p>Frontend Developer in training 👨‍💻</p>
+    <button onclick="toggleDarkMode()">Dark Mode 🌙</button>
+  </header>
+
+  <section id="about" class="hidden">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Anthony — a passionate frontend developer in training. I enjoy creating clean, responsive websites and learning new web technologies every day. Thanks for stopping by!
+    </p>
+  </section>
+
+  <section id="portfolio" class="hidden">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A simple HTML/CSS website showcasing responsive design.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>JavaScript form with email alerts and Google Sheets integration.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Dark/light mode toggle with saved user preference using localStorage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="hidden">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" disabled>Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Anthony. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://discord.com/users/763788100458774549" target="_blank" aria-label="Discord">
+        <i class="fab fa-discord"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
