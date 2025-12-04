@@ -254,3 +254,36 @@ footer {
   background: #330000;
   box-shadow: 0 0 15px rgba(255, 0, 0, 1);
 }
+
+/* Project card buttons */
+.project-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #fff;
+  border: 2px solid red;
+  color: #000;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #ffe5e5;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.9);
+}
+
+/* Dark mode button styling */
+.dark-mode .project-btn {
+  background: #1b1b1b;
+  color: #fff;
+  border: 2px solid red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.dark-mode .project-btn:hover {
+  background: #330000;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
