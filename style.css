@@ -216,3 +216,41 @@ footer {
 .dark-mode .social-icons a:hover {
   color: #ff9999;
 }
+
+/* Contact socials section */
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-socials a {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #ff0000;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.contact-socials a:hover {
+  background: #ffe5e5;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+/* Dark mode */
+.dark-mode .contact-socials a {
+  background: #1b1b1b;
+  color: #ff8080;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+.dark-mode .contact-socials a:hover {
+  background: #330000;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
